@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>robi ai store</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Noto Sans Bengali & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-slate-200">
+
+    <!-- Header Section -->
+    <header class="bg-slate-900/50 backdrop-blur-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Company Logo" class="h-8">
+            </a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="about.html" class="hover:text-orange-400 transition-colors">আমাদের সম্পর্কে</a>
+                <a href="index.html#contact" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-lg transition-colors">যোগাযোগ</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="index.html#about" class="block py-2 hover:text-orange-400">আমাদের সম্পর্কে</a>
+            <a href="https://wa.me/qr/YCPUSB5JFWPFB1" class="block py-2 mt-2 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-lg text-center">যোগাযোগ</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- All AI Packages Section -->  
+        <section id="all-packages" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h1 class="text-4xl md:text-5xl font-bold">Robi Technology-এর <span class="gradient-text">AI প্যাকেজ</span></h1>
+                    <p class="text-slate-400 mt-4 max-w-2xl mx-auto">আপনার সৃজনশীলতা এবং উৎপাদনশীলতা বাড়াতে আমাদের সংগ্রহ থেকে সেরা টুলটি বেছে নিন।</p>
+                </div>
+
+                <!-- Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Card 1: Content Writer -->
+                    <div class="glass-card rounded-xl p-8 flex flex-col transition-all duration-300 hover:border-orange-500 hover:shadow-2xl hover:shadow-orange-500/20 transform hover:-translate-y-2">
+                        <div class="flex-shrink-0 mb-6">
+                            <img src="img/canva.png" alt="Canva Pro Icon" class="h-16 w-16 mx-auto rounded-lg">
+                        </div>
+                        <h1 class="text-2xl font-bold text-center mb-4">Canva Pro </h1>
+                        <p class="text-slate-400 text-center mb-6 flex-grow">লাইফ টাইম ফ্রি</p>
+                        <ul class="space-y-3 text-left mb-8"><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>এটি হলো খুব সহজ ও শক্তিশালী ডিজাইন টুলস<li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>এতে ছবি, ভিডিও ও প্রেজেন্টেশন সবকিছু তৈরি করা যায়</span></li><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>এতে আছে হাজার রকমের রেডি করা টেমপ্লেট</span></li></ul>
+                        <div class="text-center mb-6 h-[50px]"><img src="img/free.png" alt="Free Badge" class="bouncing-badge"></div>
+                        <a href="#" class="mt-auto w-full text-center bg-slate-700 text-white font-semibold py-3 px-6 rounded-lg hover:bg-orange-500 transition-colors flex items-center justify-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 clicking-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" /></svg>
+                            <span>ক্লিক করুন</span>
+                        </a>
+                    </div>
+
+                    <!-- Card 2: Image Generator -->
+                    <div class="glass-card rounded-xl p-8 flex flex-col transition-all duration-300 hover:border-orange-500 hover:shadow-2xl hover:shadow-orange-500/20 transform hover:-translate-y-2">
+                        <div class="flex-shrink-0 mb-6">
+                             <img src="img/capcut.png" alt="CapCut Pro Icon" class="h-16 w-16 mx-auto rounded-lg">
+                        </div>
+                        <h2 class="text-2xl font-bold text-center mb-4">CapCut Pro</h2>
+                        <p class="text-slate-400 text-center mb-6 flex-grow">লাইফ টাইম ফ্রি</p>
+                         <ul class="space-y-3 text-left mb-8"><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>এটি অল-ইন-ওয়ান ভিডিও এডিটিং টুলস</span></li><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>এতে প্রিমিয়াম ইফেক্ট, ট্রানজিশন ও অ্যানিমেশন পাওয়া যায়</span></li><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>দ্রুত, প্রফেশনাল ও ক্রিয়েটিভ ভিডিও বানানোর জন্য এটি আদর্শ</span></li></ul>
+                        <div class="text-center mb-6 h-[50px]"><img src="img/free.png" alt="Free Badge" class="bouncing-badge"></div>
+                         <a href="#" class="mt-auto w-full text-center bg-slate-700 text-white font-semibold py-3 px-6 rounded-lg hover:bg-orange-500 transition-colors flex items-center justify-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 clicking-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" /></svg>
+                            <span>ক্লিক করুন</span>
+                        </a>
+                    </div>
+
+                    <!-- Card 3: Code Assistant -->
+                    <div class="glass-card rounded-xl p-8 flex flex-col transition-all duration-300 hover:border-orange-500 hover:shadow-2xl hover:shadow-orange-500/20 transform hover:-translate-y-2">
+                        <div class="flex-shrink-0 mb-6">
+                            <img src="https://placehold.co/64x64/0f172a/f97316.png?text=CSV Pro" alt="CSV Pro Icon" class="h-16 w-16 mx-auto rounded-lg">
+                        </div>
+                        <h3 class="text-2xl font-bold text-center mb-4">CSV Pro</h3>
+                        <p class="text-slate-400 text-center mb-6 flex-grow">দ্রুত সময়ে Image মেটা-ডাটা পেতে ব্যবহার করুন</p>
+                        <ul class="space-y-3 text-left mb-8"><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>সঠিক কি-ওয়ার্ড এবং টাইটেল তৈরির সেরা টুলস</span></li><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>ইমেজ থেকে সহজে প্রম্পট বের করুন</span></li><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>সকল স্টক সাইটের ছবির মেটা ডাটা তৈরি করুন</span></li></ul>
+                        <div class="text-center mb-6 h-[50px]"><img src="img/free.png" alt="Free Badge" class="bouncing-badge"></div>
+                        <a href="#" class="mt-auto w-full text-center bg-slate-700 text-white font-semibold py-3 px-6 rounded-lg hover:bg-orange-500 transition-colors flex items-center justify-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 clicking-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" /></svg>
+                            <span>ক্লিক করুন</span>
+                        </a>
+                    </div>
+
+                    <!-- Card 4: AI Voice Generator -->
+                    <div class="glass-card rounded-xl p-8 flex flex-col transition-all duration-300 hover:border-orange-500 hover:shadow-2xl hover:shadow-orange-500/20 transform hover:-translate-y-2">
+                        <div class="flex-shrink-0 mb-6">
+                           <img src="https://placehold.co/64x64/0f172a/f97316.png?text=Robi Metadata" alt="Robi Metadata Icon" class="h-16 w-16 mx-auto rounded-lg">
+                        </div>
+                        <h3 class="text-2xl font-bold text-center mb-4">Robi Metadata</h3>
+                        <p class="text-slate-400 text-center mb-6 flex-grow">দ্রুত সময়ে Image মেটা-ডাটা পেতে ব্যবহার করুন</p>
+                        <ul class="space-y-3 text-left mb-8"><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>কোনো Error ছাড়াই সঠিক কি-ওয়ার্ড এবং টাইটেল তৈরির সেরা টুলস</span></li><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>ইমেজ থেকে সহজে প্রম্পট বের করুন</span></li><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>সকল স্টক সাইটের ছবির মেটা ডাটা তৈরি করুন</span></li></ul>
+                        <div class="text-center mb-6 h-[50px]"><img src="img/free.png" alt="Free Badge" class="bouncing-badge"></div>
+                        <a href="#" class="mt-auto w-full text-center bg-slate-700 text-white font-semibold py-3 px-6 rounded-lg hover:bg-orange-500 transition-colors flex items-center justify-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 clicking-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" /></svg>
+                            <span>ক্লিক করুন</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Card 5: AI Video Editor -->
+                     <div class="glass-card rounded-xl p-8 flex flex-col transition-all duration-300 hover:border-orange-500 hover:shadow-2xl hover:shadow-orange-500/20 transform hover:-translate-y-2">
+                        <div class="flex-shrink-0 mb-6">
+                            <img src="https://placehold.co/64x64/0f172a/f97316.png?text=Img" alt="Image to Prompt Extension Icon" class="h-16 w-16 mx-auto rounded-lg">
+                        </div>
+                        <h3 class="text-2xl font-bold text-center mb-4">Image to Prompt Extension</h3>
+                        <p class="text-slate-400 text-center mb-6 flex-grow">দ্রুত সময়ে Image থেকে প্রম্পট পেতে ব্যবহার করুন</p>
+                        <ul class="space-y-3 text-left mb-8"><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>ছবিকে বিশ্লেষণ করে টেক্সট প্রম্পট তৈরি করে</span></li><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>এটি AI টুলের ছবি বর্ণনা ও কনটেন্ট জেনারেশনে সাহায্য করে</span></li><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>ডিজাইন, গবেষণা ও ক্রিয়েটিভ কাজে এটি সময় বাঁচায়</span></li></ul>
+                        <div class="text-center mb-6 h-[50px]"><img src="img/free.png" alt="Free Badge" class="bouncing-badge"></div>
+                        <a href="#" class="mt-auto w-full text-center bg-slate-700 text-white font-semibold py-3 px-6 rounded-lg hover:bg-orange-500 transition-colors flex items-center justify-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 clicking-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" /></svg>
+                            <span>ক্লিক করুন</span>
+                        </a>
+                    </div>
+
+                    <!-- Card 6: AI Chatbot Builder -->
+                    <div class="glass-card rounded-xl p-8 flex flex-col transition-all duration-300 hover:border-orange-500 hover:shadow-2xl hover:shadow-orange-500/20 transform hover:-translate-y-2">
+                        <div class="flex-shrink-0 mb-6">
+                            <img src="img/course.png" alt="Free Course Icon" class="h-16 w-16 mx-auto rounded-lg">
+                        </div>
+                        <h3 class="text-2xl font-bold text-center mb-4">Free Course</h3>
+                        <p class="text-slate-400 text-center mb-6 flex-grow">ডিজিটাল মার্কেটিং ও মাইক্রোস্টক সাইট সম্পর্কে বেসিক থেকে এডভান্স লেভেলের ক্লাস</p>
+                        <ul class="space-y-3 text-left mb-8"><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>ফেসবুক ও গুগল এড ক্যাম্পেইন</span></li><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>মাইক্রোস্টক সাইটের সকল বিষয়ের প্লেলিস্ট</span></li><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>সকল বিষয়ের A-Z ফুল গাইডলাইন</span></li></ul>
+                        <div class="text-center mb-6 h-[50px]"><img src="img/free.png" alt="Free Badge" class="bouncing-badge"></div>
+                        <a href="#" class="mt-auto w-full text-center bg-slate-700 text-white font-semibold py-3 px-6 rounded-lg hover:bg-orange-500 transition-colors flex items-center justify-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 clicking-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" /></svg>
+                            <span>ক্লিক করুন</span>
+                        </a>
+                    </div>
+					<div class="glass-card rounded-xl p-8 flex flex-col transition-all duration-300 hover:border-orange-500 hover:shadow-2xl hover:shadow-orange-500/20 transform hover:-translate-y-2">
+                        <div class="flex-shrink-0 mb-6">
+                            <img src="https://placehold.co/64x64/0f172a/f97316.png?text=Tools" alt="All Free Tools Icon" class="h-16 w-16 mx-auto rounded-lg">
+                        </div>
+                        <h3 class="text-2xl font-bold text-center mb-4">সকল ফ্রি টুলস</h3>
+                        <p class="text-slate-400 text-center mb-6 flex-grow">Robi Technology-এর পক্ষ হতে গিভওয়ে</p>
+                        <ul class="space-y-3 text-left mb-8"><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>Adobe-এর সকল সফটওয়্যার</span></li><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>Microsoft Office</span></li><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>ভিডিও এডিটিং-এর সব সফটওয়্যার</span></li></ul>
+                        <div class="text-center mb-6 h-[50px]"><img src="img/free.png" alt="Free Badge" class="bouncing-badge"></div>
+                        <a href="#" class="mt-auto w-full text-center bg-slate-700 text-white font-semibold py-3 px-6 rounded-lg hover:bg-orange-500 transition-colors flex items-center justify-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 clicking-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" /></svg>
+                            <span>ক্লিক করুন</span>
+                        </a>
+                    </div>
+					<div class="glass-card rounded-xl p-8 flex flex-col transition-all duration-300 hover:border-orange-500 hover:shadow-2xl hover:shadow-orange-500/20 transform hover:-translate-y-2">
+                        <div class="flex-shrink-0 mb-6">
+                            <img src="img/chatgpt.png" alt="ChatGPT Icon" class="h-16 w-16 mx-auto rounded-lg">
+                        </div>
+                        <h3 class="text-2xl font-bold text-center mb-4">ChatGPT</h3>
+                        <p class="text-slate-400 text-center mb-6 flex-grow">দ্রুত সমাধান, সৃজনশীল সহায়তা আর সময় বাঁচানোর সেরা AI এসিস্টেন্ট</p>
+                        <ul class="space-y-3 text-left mb-8"><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>যেকোনো প্রশ্নের সমাধান মুহূর্তেই</span></li><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>লেখা, আইডিয়া, কনটেন্ট তৈরিতে অসাধারণ সহকারী</span></li><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>পড়াশোনা থেকে ব্যবসা, সবকিছুর কাজ সহজ করে দেয়</span></li></ul>
+                        <div class="text-center text-3xl font-bold mb-6">৳২৫০ /<span class="text-base font-normal text-slate-400">১ মাস</span></div>
+                        <a href="#" class="mt-auto w-full text-center bg-slate-700 text-white font-semibold py-3 px-6 rounded-lg hover:bg-orange-500 transition-colors flex items-center justify-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 clicking-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" /></svg>
+                            <span>ক্লিক করুন</span>
+                        </a>
+                    </div>
+					<div class="glass-card rounded-xl p-8 flex flex-col transition-all duration-300 hover:border-orange-500 hover:shadow-2xl hover:shadow-orange-500/20 transform hover:-translate-y-2">
+                        <div class="flex-shrink-0 mb-6">
+                            <img src="img/photoroom.png" alt="Photoroom Icon" class="h-16 w-16 mx-auto rounded-lg">
+                        </div>
+                        <h3 class="text-2xl font-bold text-center mb-4">Photoroom </h3>
+                        <p class="text-slate-400 text-center mb-6 flex-grow">অনলিমিটেড ব্যাকগ্রাউন্ড রিমুভ, ঘরে বসেই প্রফেশনাল ছবি – সব কিছু সহজেই</p>
+                        <ul class="space-y-3 text-left mb-8"><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>এক ক্লিকে নিখুঁত ব্যাকগ্রাউন্ড রিমুভ</span></li><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>আনলিমিটেড ছবির ব্যাকগ্রাউন্ড রিমুভ করা যায়</span></li><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>পাসপোর্ট, আইডি বা অন্য অফিসিয়াল প্রয়োজনের ছবি সহজে বানানো যায়</span></li></ul>
+                        <div class="text-center text-3xl font-bold mb-6">৳২৫০/<span class="text-base font-normal text-slate-400">১ মাস</span></div>
+                        <a href="#" class="mt-auto w-full text-center bg-slate-700 text-white font-semibold py-3 px-6 rounded-lg hover:bg-orange-500 transition-colors flex items-center justify-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 clicking-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" /></svg>
+                            <span>ক্লিক করুন</span>
+                        </a>
+                    </div>
+					<div class="glass-card rounded-xl p-8 flex flex-col transition-all duration-300 hover:border-orange-500 hover:shadow-2xl hover:shadow-orange-500/20 transform hover:-translate-y-2">
+                        <div class="flex-shrink-0 mb-6">
+                           <img src="img/recaft.png" alt="Recraft Ai Icon" class="h-16 w-16 mx-auto rounded-lg">
+                        </div>
+                        <h3 class="text-2xl font-bold text-center mb-4">Recarft Ai</h3>
+                        <p class="text-slate-400 text-center mb-6 flex-grow">হাই কুয়ালিটির ছবি, ভেক্টর, লোগো ও পোস্টার – সবই সহজে তৈরি করা যায়</p>
+                        <ul class="space-y-3 text-left mb-8"><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>১২০০ ক্রেডিট</span></li><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>ব্র্যান্ডিং ও মার্কেটিংয়ের জন্য প্রফেশনাল কনটেন্ট তৈরি</span></li><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>হাই কুয়ালিটির 3D মডেল তৈরি করা ও রাস্টার ইমেজকে সহজে ভেক্টর ফরম্যাটে রূপান্তর করা যায়</span></li></ul>
+                        <div class="text-center text-3xl font-bold mb-6">৳২৫০/<span class="text-base font-normal text-slate-400">১ মাস</span></div>
+                        <a href="#" class="mt-auto w-full text-center bg-slate-700 text-white font-semibold py-3 px-6 rounded-lg hover:bg-orange-500 transition-colors flex items-center justify-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 clicking-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" /></svg>
+                            <span>ক্লিক করুন</span>
+                        </a>
+                    </div>
+					<div class="glass-card rounded-xl p-8 flex flex-col transition-all duration-300 hover:border-orange-500 hover:shadow-2xl hover:shadow-orange-500/20 transform hover:-translate-y-2">
+                        <div class="flex-shrink-0 mb-6">
+                            <img src="img/ideogram.png" alt="Ideogram Ai Icon" class="h-16 w-16 mx-auto rounded-lg">
+                        </div>
+                        <h3 class="text-2xl font-bold text-center mb-4">Ideogram Ai</h3>
+                        <p class="text-slate-400 text-center mb-6 flex-grow">Illustration, Calligraphy এবং প্রফেশনাল ডিজাইন</p>
+                        <ul class="space-y-3 text-left mb-8"><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>Typography ও টেক্সট-স্টাইলিং</span></li><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>১০০০ ফাস্ট ক্রেডিট ও আনলিমিটেড স্লো ক্রেডিট</span></li><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>টেক্সট থেকে সহজেই আকর্ষণীয় ও ক্রিয়েটিভ illustration বানানো যায়</span></li></ul>
+                        <div class="text-center text-3xl font-bold mb-6">৳৯৫০/<span class="text-base font-normal text-slate-400">১ মাস</span></div>
+                        <a href="#" class="mt-auto w-full text-center bg-slate-700 text-white font-semibold py-3 px-6 rounded-lg hover:bg-orange-500 transition-colors flex items-center justify-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 clicking-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" /></svg>
+                            <span>ক্লিক করুন</span>
+                        </a>
+                    </div>
+					<div class="glass-card rounded-xl p-8 flex flex-col transition-all duration-300 hover:border-orange-500 hover:shadow-2xl hover:shadow-orange-500/20 transform hover:-translate-y-2">
+                        <div class="flex-shrink-0 mb-6">
+                            <img src="img/midjourney.png" alt="Midjourney Ai Icon" class="h-16 w-16 mx-auto rounded-lg">
+                        </div>
+                        <h3 class="text-2xl font-bold text-center mb-4">Midjourney Ai</h3>
+                        <p class="text-slate-400 text-center mb-6 flex-grow">ক্রিয়েটিভ আর্ট, স্টাইলাইজড ইমেজ এবং প্রফেশনাল ডিজাইনারের সহযোগি</p>
+                        <ul class="space-y-3 text-left mb-8"><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>আনলিমিটেড ক্রিয়েটিভ ইমেজ তৈরি করা যায়</span></li><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>বিভিন্ন স্টাইল ও রেশিওর ইমেজ তৈরি করা যায়</span></li><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>দ্রুত ইমেজ অউটপুট দেয়</span></li></ul>
+                        <div class="text-center text-3xl font-bold mb-6">৳২৮০০/<span class="text-base font-normal text-slate-400">১ মাস</span></div>
+                        <a href="#" class="mt-auto w-full text-center bg-slate-700 text-white font-semibold py-3 px-6 rounded-lg hover:bg-orange-500 transition-colors flex items-center justify-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 clicking-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" /></svg>
+                            <span>ক্লিক করুন</span>
+                        </a>
+                    </div>
+										<div class="glass-card rounded-xl p-8 flex flex-col transition-all duration-300 hover:border-orange-500 hover:shadow-2xl hover:shadow-orange-500/20 transform hover:-translate-y-2">
+                        <div class="flex-shrink-0 mb-6">
+                            <img src="img/leanardo.png" alt="Leonardo Ai Icon" class="h-16 w-16 mx-auto rounded-lg">
+                        </div>
+                        <h3 class="text-2xl font-bold text-center mb-4">Leonardo Ai</h3>
+                        <p class="text-slate-400 text-center mb-6 flex-grow">পেশাদার নির্মাতা, ছোট ব্যবসা, এবং কনটেন্ট প্রস্তুতকারক</p>
+                        <ul class="space-y-3 text-left mb-8"><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>২৫,০০০ ফাস্ট ক্রেডিট</span></li><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>রিল্যাক্স মোডে আনলিমিটেড ইমেজ জেনারেট করা যায়</span></li><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>একসাথে ৩টি জেনারেট করা যায় ও একবারে সর্বোচ্চ ১০টি পজেনারেশনের কাজ সিরিয়ালে রাখা যাবে</span></li></ul>
+                        <div class="text-center text-3xl font-bold mb-6">৳২৮০০/<span class="text-base font-normal text-slate-400">১ মাস</span></div>
+                        <a href="#" class="mt-auto w-full text-center bg-slate-700 text-white font-semibold py-3 px-6 rounded-lg hover:bg-orange-500 transition-colors flex items-center justify-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 clicking-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" /></svg>
+                            <span>ক্লিক করুন</span>
+                        </a>
+                    </div>
+										<div class="glass-card rounded-xl p-8 flex flex-col transition-all duration-300 hover:border-orange-500 hover:shadow-2xl hover:shadow-orange-500/20 transform hover:-translate-y-2">
+                        <div class="flex-shrink-0 mb-6">
+                            <img src="img/reve.png" alt="Reve Ai Icon" class="h-16 w-16 mx-auto rounded-lg">
+                        </div>
+                        <h3 class="text-2xl font-bold text-center mb-4">Reve Ai</h3>
+                        <p class="text-slate-400 text-center mb-6 flex-grow">টেক্সট থেকে ছবি, স্টাইল ট্রান্সফার এবং উচ্চমানের ডিজাইন – সবই এখন সহজে</p>
+                        <ul class="space-y-3 text-left mb-8"><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>আনলিমিটেড ইমেজ জেনারেট করা যায়</span></li><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>হাই কুয়ালিটির ইমেজ জেনারেশন</span></li><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>টেক্সট-টু-ইমেজ জেনারেশন</span></li></ul>
+                        <div class="text-center text-3xl font-bold mb-6">৳২৮০০/<span class="text-base font-normal text-slate-400">১ মাস</span></div>
+                        <a href="#" class="mt-auto w-full text-center bg-slate-700 text-white font-semibold py-3 px-6 rounded-lg hover:bg-orange-500 transition-colors flex items-center justify-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 clicking-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" /></svg>
+                            <span>ক্লিক করুন</span>
+                        </a>
+                    </div>
+										<div class="glass-card rounded-xl p-8 flex flex-col transition-all duration-300 hover:border-orange-500 hover:shadow-2xl hover:shadow-orange-500/20 transform hover:-translate-y-2">
+                        <div class="flex-shrink-0 mb-6">
+                            <img src="https://placehold.co/64x64/0f172a/f97316.png?text=Robi" alt="Robi Ai Icon" class="h-16 w-16 mx-auto rounded-lg">
+                        </div>
+                        <h3 class="text-2xl font-bold text-center mb-4">Robi Ai</h3>
+                        <p class="text-slate-400 text-center mb-6 flex-grow">আপনার ওয়েবসাইটের জন্য ২৪/৭ কাস্টমার সাপোর্ট চ্যাটবট তৈরি করুন।</p>
+                        <ul class="space-y-3 text-left mb-8"><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>নো-কোড ড্র্যাগ অ্যান্ড ড্রপ</span></li><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>ফেসবুক মেসেঞ্জার ইন্টিগ্রেশন</span></li><li class="flex items-start"><span class="feature-icon mr-3 mt-1 h-5 w-5 flex-shrink-0">&#10003;</span><span>লিড জেনারেশন ফর্ম</span></li></ul>
+                        <div class="text-center text-3xl font-bold mb-6">৳২৮০০/<span class="text-base font-normal text-slate-400">১ মাস</span></div>
+                        <a href="#" class="mt-auto w-full text-center bg-slate-700 text-white font-semibold py-3 px-6 rounded-lg hover:bg-orange-500 transition-colors flex items-center justify-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 clicking-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" /></svg>
+                            <span>ক্লিক করুন</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer Section -->
+    <footer id="contact" class="bg-slate-900 border-t border-slate-800">
+        <div class="container mx-auto px-6 py-8 text-center text-slate-400">
+            <p>&copy; 2025 Robi ai store। All rights reserved।</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/qr/YCPUSB5JFWPFB1" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-8 h-8">
+            <path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 221.9-99.6 221.9-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.8 0-67.6-9.5-97.2-26.7l-7-4.1-72.5 19 19.3-70.6-4.5-7.4c-18.5-30.6-28.2-66.3-28.2-103.6 0-109.4 89.1-198.5 198.5-198.5 53.3 0 103.5 20.7 140.4 57.6 36.9 36.9 57.6 87.1 57.6 140.4-.1 109.4-89.2 198.5-198.6 198.5zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+        </svg>
+    </a>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>

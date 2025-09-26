@@ -1,0 +1,72 @@
+/* Custom Styles */
+body {
+    font-family: 'Noto Sans Bengali', 'Inter', sans-serif;
+    background-color: #0f172a; /* Slate 900 */
+}
+.glass-card {
+    background: rgba(30, 41, 59, 0.5); /* Slate 800 with 100% opacity */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(51, 65, 85, 0.5); /* Slate 700 with 50% opacity */
+}
+.gradient-text {
+    background: linear-gradient(to right, #fb923c, #f97316);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.feature-icon {
+    color: #f97316; /* Orange 500 */
+}
+/* Bouncing Animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-15%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+.bouncing-badge {
+  animation: bounce 1.5s infinite;
+  margin: -11px auto;
+  height: 108px; /* Adjust badge height */
+}
+
+/* Clicking Animation for Button Icon */
+@keyframes click-animation {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.85);
+  }
+}
+.clicking-icon {
+  animation: click-animation 1.5s infinite ease-in-out;
+}
+
+/* Floating WhatsApp Button Styles */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366; /* Official WhatsApp Green */
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+.text-lm{font-size"2.10rem;}  
